@@ -1,208 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Tic-Tac-Toe</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="style.css" type="text/css">
-   </head>
-   <body>
-      <script>
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light Theme</title>
+	<script src="https://kit.fontawesome.com/3fbeac41d6.js" crossorigin="anonymous"></script>
+<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="">
+    <h4 class="logo">ASPEAR</h4>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#hero">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li> <a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h2 class="hero_header">ANDERS&nbsp; <span class="light">SPEAR</span></h2>
+    <p class="tagline">You reached my website</p>
+  </section>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2 class="hidden">About</h2>
+    <p class="text_column">You can reach the minecraft server at po3.aspear.net, current modpack is Project Ozone 3: Mythic Mode&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </p>
+    <p class="text_column">I'll later add links to github/discord/other projects, I've built websites for my <a href="scouts.html">Scout Troop</a>, some games like <a href="ttt.html">ultimate tic tac toe</a>, and more.&nbsp; &nbsp;&nbsp;&nbsp; </p>
+    <p class="text_column">Contact me at <a href="#contact">Anders@aspear.net</a> or via my discord, <br>
+Bean Bingus #7999&nbsp;&nbsp; </p>
+  </section>
+  <!-- Stats Gallery Section -->
+  <!-- Parallax Section -->
+  <section class="banner">
+	  <img src="images/andy.jpg" alt="" class="thumbnail">
 	  
-	  
-         var turn=false;
-         
-         function go(id){
-         if(turn){
-         id.innerHTML="X";
-         }
-         else{
-         id.innerHTML="O";
-         }
-         turn=!turn;
-         }
-         
-         
-      </script>
-	  
-	 <center> <h1 >ULTIMATE Tic-Tac-Toe!</h1></center>
-	  
-      <div class="row">
-         <div class="square">
-            <table>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-            </table>
-         </div>
-         <div class="square">
-            <table>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-            </table>
-         </div>
-         <div class="square">
-            <table>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-            </table>
-         </div>
-      </div>
-      <div class="row">
-         <div class="square">
-            <table>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-            </table>
-         </div>
-         <div class="square">
-            <table>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-            </table>
-         </div>
-         <div class="square">
-            <table>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-            </table>
-         </div>
-      </div>
-      <div class="row">
-         <div class="square">
-            <table>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-            </table>
-         </div>
-         <div class="square">
-            <table>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-            </table>
-         </div>
-         <div class="square">
-            <table>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-               <tr>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-                  <td onclick="go(this)"> </td>
-               </tr>
-            </table>
-         </div>
-      </div>
-   </body>
+    <h2 class="parallax">Large Blue Space</h2>
+    <p class="parallax_description">This website was only partially from a template&nbsp;</p>
+  </section>
+  <!-- More Info Section -->
+  <!-- Footer Section -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header">SEND ME A MESSAGE&nbsp;</p>
+	  <div style=" display:flex;justify-content: center;
+  align-items: center;">
+	  <a class="tagline"  style="padding: 10px;" href="mailto:anders@aspear.net"><i class="fa fa-fw fa-envelope"></i>Anders@aspear.net</a>
+	   <a class="tagline"  style="padding: 10px;" href="https://discord.com/app"><i class="fa fa-fw fa-discord"></i>Bean Bingus#7999</a>
+	  </div>
+		  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2021- <strong>Anders Spear</strong></div>
+</div>
+<!-- Main Container Ends -->
+</body>
 </html>
