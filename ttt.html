@@ -13,14 +13,8 @@
          var turn=false;
          
          function go(id){
-         if(turn){
-         id.innerHTML="X";
-         }
-         else{
-         id.innerHTML="O";
-         }
-         turn=!turn;
-         }
+		 id.innerHTML = (turn ^= true) ? 'O' : 'X'
+	 }
          
          
       </script>
